@@ -7,9 +7,13 @@ html {
 
 body {
   padding: 20px;
+  background-color: #E7EFF6;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
-h2, h4, p {
+h2, h3, p {
   margin: 0;
 }
 
@@ -18,7 +22,7 @@ h2, h4, p {
 }
 
 #card {
-  box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.36);
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.25);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -40,26 +44,27 @@ h2, h4, p {
 
 #bottom-left-section {
   height: 100%;
-  background-color: #2ab2af;
+  background-color: #2BB4B1;
   padding: 25px;
   flex-basis: 50%;
 }
 
 #bottom-right-section {
   height: 100%;
-  background-color: #2EBFBD;
+  background-color: #49BEBD;
   padding: 25px;
   flex-basis: 50%;
 }
 
-#top-section h2 {
+#top-section h3 {
   color: #2ab2af;
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 #top-section h4 {
   color: #c0df34;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #top-section p {
@@ -69,19 +74,20 @@ h2, h4, p {
 
 button {
   color: white;
-  background-color: #c0df34;
+  background-color: #BEDF32;
+  font-size: 0.9rem;
+  font-weight: 600;
   border: none;
-  padding: 10px;
+  padding: 15px;
   width: 100%;
   border-radius: 5px;
-
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
 }
 
 button:hover {
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
   cursor: pointer;
   background-color: #A9C42D;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 #price {
@@ -89,7 +95,7 @@ button:hover {
   font-size: 1.5rem;
 }
 
-#bottom-section h4 {
+#bottom-section h3 {
   margin-bottom: 25px
 }
 
@@ -126,5 +132,11 @@ button:hover {
   
   #bottom-section {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  #card {
+  width: 630px;
   }
 }
